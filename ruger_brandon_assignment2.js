@@ -3,6 +3,8 @@
 // Brandon Ruger
 // SDI 1306
 // Project 2
+
+// Variables
 var myDog = "Ryder";
 var age = 2;
 var favoriteToys = ["antler", "kong", "giraffe", "nylabone", "ball"];
@@ -25,6 +27,18 @@ var adoptedDog = function(newDog){
 
 // Boolean Function
 
+var typeOfFood = function(rawFoodDiet, kibbleDiet){
+    var outcome = "The raw food diet worked really well for him.";
+    var rawFoodBoolean = true;
+    var kibbleFoodBoolean = false;
+    console.log("After I brought him home, I needed to figure out what type of food I was going to feed him.");
+    console.log("I did tons of research because I wanted to do whatever was going to be best for him.");
+    if (rawFoodBoolean === true) {
+        console.log("After doing research I decided to go with " + rawFoodDiet + " because of the benefits raw food has for dogs.")
+    } else console.log("I tried him on Wellness's kibble food to see how he would do on that.")
+    return outcome;
+}
+
 // Number Function
 
 // String Function
@@ -36,4 +50,7 @@ var adoptedDog = function(newDog){
 // Main Code
 console.log("This is a story about my dog named " + myDog + ".");
 adoptedDog("a new dog");
+var myOutcome = typeOfFood("Stella & Chewy's raw food diet", "Wellness kibble diet");
+console.log(myOutcome);
+
 
