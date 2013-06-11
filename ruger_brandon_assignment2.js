@@ -30,6 +30,8 @@ var adoptedDog = function(newDog){
 var typeOfFood = function(rawFoodDiet, kibbleDiet){
     var outcome = "The raw food diet worked really well for him.";
     var altOutcome = "The raw food diet didn't work out, so I had to switch him to kibble.";
+    var outcome = "It is " + true + " that the raw food diet worked well for him.";
+    var altOutcome = "It is " + false + " that the raw food diet worked, so I had to switch him to kibble.";
     var rawFoodBoolean = true;
     var kibbleFoodBoolean = false;
     console.log("After I brought him home, I needed to figure out what type of food I was going to feed him.");
