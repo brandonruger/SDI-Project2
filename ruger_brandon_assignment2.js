@@ -28,8 +28,6 @@ var adoptedDog = function(newDog){
 // Boolean Function
 
 var typeOfFood = function(rawFoodDiet, kibbleDiet){
-    var outcome = "The raw food diet worked really well for him.";
-    var altOutcome = "The raw food diet didn't work out, so I had to switch him to kibble.";
     var outcome = "It is " + true + " that the raw food diet worked well for him.";
     var altOutcome = "It is " + false + " that the raw food diet worked, so I had to switch him to kibble.";
     var rawFoodBoolean = true;
@@ -44,6 +42,9 @@ var typeOfFood = function(rawFoodDiet, kibbleDiet){
 }
 
 // Number Function
+
+var costOfFood = function(cost, [sizeOfBag, flavor]);
+
 
 // String Function
 
