@@ -29,14 +29,16 @@ var adoptedDog = function(newDog){
 
 var typeOfFood = function(rawFoodDiet, kibbleDiet){
     var outcome = "The raw food diet worked really well for him.";
+    var altOutcome = "The raw food diet didn't work out, so I had to switch him to kibble.";
     var rawFoodBoolean = true;
     var kibbleFoodBoolean = false;
     console.log("After I brought him home, I needed to figure out what type of food I was going to feed him.");
     console.log("I did tons of research because I wanted to do whatever was going to be best for him.");
     if (rawFoodBoolean === true) {
         console.log("After doing research I decided to go with " + rawFoodDiet + " because of the benefits raw food has for dogs.")
+        return outcome;
     } else console.log("I tried him on Wellness's kibble food to see how he would do on that.")
-    return outcome;
+        return altOutcome;    
 }
 
 // Number Function
