@@ -39,11 +39,34 @@ var getTypeOfFood = function(rawFoodDiet, kibbleDiet){
         return outcome;
     } else console.log("I tried him on Wellness's kibble food to see how he would do on that.")
         return altOutcome;    
-}
+};
 
 // Number Function
 
-//var costOfFood = function(cost, [sizeOfBag, flavor]);
+var howManyBags = function(amountToSpend){
+    console.log("Each bag of raw food cost " + 30 + " dollars.");
+    var totalNumberOfBags = (amountToSpend / 30);
+    while (amountToSpend >= 30) {
+        console.log("I bought " + totalNumberOfBags + " bags. Let's see if I have enough for another bag.")
+        
+        totalNumberOfBags++;
+        amountToSpend -=30;
+    }
+    return totalNumberOfBags;
+}
+
+/*var getCostOfFood = function(sizeOfBag){
+    var pricePerPound = 5,
+        totalCost = (pricePerPound * sizeOfBag),
+        numberOfBags;
+    while (totalCost <= 100) {
+        console.log("I think I'll buy another bag.");
+    } console.log("Ok, I think I bought all I can afford for now.");
+    
+    
+        
+};*/
+
 
 
 // String Function
@@ -57,5 +80,7 @@ console.log("This is a story about my dog named " + myDog + ".");
 adoptedDog("a new dog");
 var myOutcome = getTypeOfFood("Stella & Chewy's raw food diet", "Wellness kibble diet");
 console.log(myOutcome);
-
+console.log("Next, I needed to figure out how many bags of food I was going to buy.");
+var numberOfBagsBought = howManyBags(240);
+console.log("The ")
 
