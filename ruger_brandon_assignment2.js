@@ -45,7 +45,7 @@ var getTypeOfFood = function(rawFoodDiet, kibbleDiet){
 
 var howManyBags = function(amountToSpend){
     console.log("Each bag of raw food cost " + 30 + " dollars.");
-    var totalNumberOfBags = (amountToSpend / 30);
+    var totalNumberOfBags = 1;
     while (amountToSpend >= 30) {
         console.log("I bought " + totalNumberOfBags + " bags. Let's see if I have enough for another bag.")
         
