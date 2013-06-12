@@ -27,7 +27,7 @@ var adoptedDog = function(newDog){
 
 // Boolean Function
 
-var typeOfFood = function(rawFoodDiet, kibbleDiet){
+var getTypeOfFood = function(rawFoodDiet, kibbleDiet){
     var outcome = "It is " + true + " that the raw food diet worked well for him.";
     var altOutcome = "It is " + false + " that the raw food diet worked, so I had to switch him to kibble.";
     var rawFoodBoolean = true;
@@ -43,7 +43,7 @@ var typeOfFood = function(rawFoodDiet, kibbleDiet){
 
 // Number Function
 
-var costOfFood = function(cost, [sizeOfBag, flavor]);
+//var costOfFood = function(cost, [sizeOfBag, flavor]);
 
 
 // String Function
@@ -55,7 +55,7 @@ var costOfFood = function(cost, [sizeOfBag, flavor]);
 // Main Code
 console.log("This is a story about my dog named " + myDog + ".");
 adoptedDog("a new dog");
-var myOutcome = typeOfFood("Stella & Chewy's raw food diet", "Wellness kibble diet");
+var myOutcome = getTypeOfFood("Stella & Chewy's raw food diet", "Wellness kibble diet");
 console.log(myOutcome);
 
 
