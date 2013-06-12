@@ -49,7 +49,7 @@ var howManyBags = function(amountToSpend){
     while (amountToSpend >= 30) {
         if (totalNumberOfBags === 0) {
             console.log("Let's see how many bags I can afford.");
-        } else if (totalNumberOfBags >0) {
+        } else if (totalNumberOfBags > 0) {
             console.log("I bought " + totalNumberOfBags + " bags. Let's see if I have enough for another bag.");
         }
        
@@ -63,6 +63,15 @@ var howManyBags = function(amountToSpend){
 
 // String Function
 
+var getItemsBoughtAtPetStore = function(item1, item2, item3){
+    var itemsBought = (item1 + ", " + item2 + ",and " + item3);
+    console.log("At the pet store I found a lot of things to buy.");
+    console.log("I ended up purchasing a " + item1 + ", a " + item2 + " and a " + item3 + ".");
+    console.log("Ryder will be so excited once he sees that I bought him a " + itemsBought + ".");
+    
+    return itemsBought;
+}
+
 // Array Function
 
 
@@ -75,5 +84,7 @@ console.log(myOutcome);
 console.log("Next, I needed to figure out how many bags of food I was going to buy.");
 var numberOfBagsBought = howManyBags(240);
 console.log("The total number of bags that I was able to purchase was " + numberOfBagsBought + ".");
+console.log("Now that I bought him plenty of food, I think I'll go to the pet store and buy him some toys and other needed items.");
+var itemsBoughtAtPetStore = getItemsBoughtAtPetStore("kong", "nylabone", "deer antler")
 
 
