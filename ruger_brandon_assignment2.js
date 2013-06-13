@@ -74,21 +74,32 @@ var getItemsBoughtAtPetStore = function(item1, item2, item3){
 };
 
 // Array Function
-var myArray = function(){
-var dogWalks = [20, 10, 30, 20, 10];
 
-for (var i = 5; i <= dogWalks.length; i--) {
-    if (i <= dogWalks.length) {
+
+/*var dogWalks = function (dogWalkArray = [20, 10, 30, 20, 10]) {
+for (var i = 5; i <= dogWalksArray.length; i--) {
+    if (i <= dogWalksArray.length) {
         console.log("Ryder will get " + i + " more walks for today.");
     } else {
         console.log("No more walks for Ryder until tomorrow.");
-    }
-}
+    };
 
-
+    var totalTimeSpentWalking = ([0] + [1] + [2] + [3] + [4]);
+    return totalTimeSpentWalking;
 };
 
-console.log("Ryder typically gets " + dogWalks.length + " walks per day.");
+var dogWalkArray = [20, 10, 30, 20, 10];
+    for (var i = 5; i <= dogWalksArray.length; i--) {
+        if (i <= dogWalksArray.length) {
+        console.log("Ryder will get " + i + " more walks for today.");
+        } else {
+        console.log("No more walks for Ryder until tomorrow.");
+    };
+
+    var totalTimeSpentWalking = ([0] + [1] + [2] + [3] + [4]);
+dogWalkArray.push(10);
+console.log("Some nights when Ryder has lots of playtime, he needs to go for an extra walk, which means he gets " + dogWalkArray.length + " walks those days.");
+console.log("On those days, he gets walks for " + dogWalkArray + " minutes.")*/
 
 
 
@@ -101,12 +112,11 @@ console.log("Next, I needed to figure out how many bags of food I was going to b
 var numberOfBagsBought = howManyBags(240);
 console.log("The total number of bags that I was able to purchase was " + numberOfBagsBought + ".");
 console.log("Now that I bought him plenty of food, I think I'll go to the pet store and buy him some toys and other needed items.");
-var itemsBoughtAtPetStore = getItemsBoughtAtPetStore("kong", "nylabone", "deer antler")
+var itemsBoughtAtPetStore = getItemsBoughtAtPetStore("kong", "nylabone", "deer antler");
 console.log("At the pet store I found a lot of things to buy.");
 console.log("I ended up purchasing a " + itemsBoughtAtPetStore + ".");
 console.log("Ryder will be so excited once he sees what I bought him!");
 console.log("He always gets so excited when he gets new toys, although certain toys tend not to last very long.");
-console.log("Dogs love going for walks, and Ryder is certainly no exception.");
-
-
-
+//var timeWalkingRyder = dogWalkArray;
+//console.log("Dogs love going for walks, and Ryder is certainly no exception.");
+//console.log("A typical day for Ryder includes " + timeWalkingRyder + " minutes of walking time.");
