@@ -69,9 +69,6 @@ var howManyBags = function(amountToSpend){
 
 var getItemsBoughtAtPetStore = function(item1, item2, item3){
     var itemsBought = (item1 + ", " + item2 + ",and " + item3);
-    console.log("At the pet store I found a lot of things to buy.");
-    console.log("I ended up purchasing a " + item1 + ", a " + item2 + " and a " + item3 + ".");
-    console.log("Ryder will be so excited once he sees that I bought him a " + itemsBought + ".");
     
     return itemsBought;
 };
@@ -90,5 +87,9 @@ var numberOfBagsBought = howManyBags(240);
 console.log("The total number of bags that I was able to purchase was " + numberOfBagsBought + ".");
 console.log("Now that I bought him plenty of food, I think I'll go to the pet store and buy him some toys and other needed items.");
 var itemsBoughtAtPetStore = getItemsBoughtAtPetStore("kong", "nylabone", "deer antler")
+console.log("At the pet store I found a lot of things to buy.");
+console.log("I ended up purchasing a " + itemsBoughtAtPetStore + ".");
+console.log("Ryder will be so excited once he sees what I bought him!");
+
 
 
