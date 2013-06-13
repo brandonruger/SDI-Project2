@@ -74,7 +74,18 @@ var getItemsBoughtAtPetStore = function(item1, item2, item3){
 };
 
 // Array Function
+var dogWalkArray = [20, 10, 30, 20, 10];
 
+var getTimeWalkingDog = function(dogWalkArray){
+    var dogWalkTime = [0] + [1] + [2] + [3] + [4];
+    for (var i = 5; i <= dogWalkArray.length; i--) {
+        if (i <= dogWalkArray.length) {
+            console.log("Ryder will get " + i + " more walks for today.");
+        } else {
+            console.log("Time to put Ryder to bed. No more walks until tomorrow.");
+        };
+    } return dogWalkTime;
+}
 
 /*var dogWalks = function (dogWalkArray = [20, 10, 30, 20, 10]) {
 for (var i = 5; i <= dogWalksArray.length; i--) {
@@ -117,6 +128,6 @@ console.log("At the pet store I found a lot of things to buy.");
 console.log("I ended up purchasing a " + itemsBoughtAtPetStore + ".");
 console.log("Ryder will be so excited once he sees what I bought him!");
 console.log("He always gets so excited when he gets new toys, although certain toys tend not to last very long.");
-//var timeWalkingRyder = dogWalkArray;
-//console.log("Dogs love going for walks, and Ryder is certainly no exception.");
-//console.log("A typical day for Ryder includes " + timeWalkingRyder + " minutes of walking time.");
+var timeWalkingDog = getTimeWalkingDog;
+console.log("Dogs love going for walks, and Ryder is certainly no exception.");
+console.log("A typical day for Ryder includes " + timeWalkingDog + " minutes of walking time.");
