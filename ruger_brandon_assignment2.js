@@ -74,6 +74,21 @@ var getItemsBoughtAtPetStore = function(item1, item2, item3){
 };
 
 // Array Function
+var myArray = function(){
+var dogWalks = [20, 10, 30, 20, 10];
+
+for (var i = 5; i <= dogWalks.length; i--) {
+    if (i <= dogWalks.length) {
+        console.log("Ryder will get " + i + " more walks for today.");
+    } else {
+        console.log("No more walks for Ryder until tomorrow.");
+    }
+}
+
+
+};
+
+console.log("Ryder typically gets " + dogWalks.length + " walks per day.");
 
 
 
@@ -90,6 +105,8 @@ var itemsBoughtAtPetStore = getItemsBoughtAtPetStore("kong", "nylabone", "deer a
 console.log("At the pet store I found a lot of things to buy.");
 console.log("I ended up purchasing a " + itemsBoughtAtPetStore + ".");
 console.log("Ryder will be so excited once he sees what I bought him!");
+console.log("He always gets so excited when he gets new toys, although certain toys tend not to last very long.");
+console.log("Dogs love going for walks, and Ryder is certainly no exception.");
 
 
 
