@@ -78,39 +78,14 @@ var dogWalkArray = [20, 10, 30, 20, 10];
 
 var getTimeWalkingDog = function(dogWalkArray){
     var dogWalkTime = [0] + [1] + [2] + [3] + [4];
-    for (var i = 5; i <= dogWalkArray.length; i--) {
-        if (i <= dogWalkArray.length) {
-            console.log("Ryder will get " + i + " more walks for today.");
-        } else {
+    for (var i = 0; i < dogWalkArray.length; i++) {
+        if (i < dogWalkArray.length) {
+            console.log("Ryder has gotten " + i + " walks so far today.");
+        } else  if (i >= dogWalkArray.length){
             console.log("Time to put Ryder to bed. No more walks until tomorrow.");
         };
     } return dogWalkTime;
-}
-
-/*var dogWalks = function (dogWalkArray = [20, 10, 30, 20, 10]) {
-for (var i = 5; i <= dogWalksArray.length; i--) {
-    if (i <= dogWalksArray.length) {
-        console.log("Ryder will get " + i + " more walks for today.");
-    } else {
-        console.log("No more walks for Ryder until tomorrow.");
-    };
-
-    var totalTimeSpentWalking = ([0] + [1] + [2] + [3] + [4]);
-    return totalTimeSpentWalking;
 };
-
-var dogWalkArray = [20, 10, 30, 20, 10];
-    for (var i = 5; i <= dogWalksArray.length; i--) {
-        if (i <= dogWalksArray.length) {
-        console.log("Ryder will get " + i + " more walks for today.");
-        } else {
-        console.log("No more walks for Ryder until tomorrow.");
-    };
-
-    var totalTimeSpentWalking = ([0] + [1] + [2] + [3] + [4]);
-dogWalkArray.push(10);
-console.log("Some nights when Ryder has lots of playtime, he needs to go for an extra walk, which means he gets " + dogWalkArray.length + " walks those days.");
-console.log("On those days, he gets walks for " + dogWalkArray + " minutes.")*/
 
 
 
@@ -128,6 +103,6 @@ console.log("At the pet store I found a lot of things to buy.");
 console.log("I ended up purchasing a " + itemsBoughtAtPetStore + ".");
 console.log("Ryder will be so excited once he sees what I bought him!");
 console.log("He always gets so excited when he gets new toys, although certain toys tend not to last very long.");
-var timeWalkingDog = getTimeWalkingDog;
+var timeWalkingDog = getTimeWalkingDog(dogWalkArray);
 console.log("Dogs love going for walks, and Ryder is certainly no exception.");
 console.log("A typical day for Ryder includes " + timeWalkingDog + " minutes of walking time.");
