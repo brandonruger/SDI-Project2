@@ -9,6 +9,12 @@ var myDog = "Ryder";
 var age = 2;
 var favoriteToys = ["antler", "kong", "giraffe", "nylabone", "ball"];
 var store = "All About Puppies";
+var dogWalkArray = [20, 10, 30, 20, 10];
+var myOutcome = getTypeOfFood;
+var numberOfBagsBought = howManyBags;
+var itemsBoughtAtPetStore = getItemsBoughtAtPetStore;
+
+
 
 // Procedure Function
 
@@ -52,7 +58,7 @@ var howManyBags = function(amountToSpend){
     var totalNumberOfBags = 0;
     while (amountToSpend >= 30) {
         if (totalNumberOfBags === 0) {
-            console.log("Let's see how many bags I can afford.");
+            console.log("Let's see how many bags I can afford if I have " + amountToSpend + " dollars.");
         } else if (totalNumberOfBags > 0) {
             console.log("I bought " + totalNumberOfBags + " bags. Let's see if I have enough for another bag.");
         };
@@ -75,48 +81,33 @@ var getItemsBoughtAtPetStore = function(item1, item2, item3){
 
 // Array Function
 
-
-/*var dogWalks = function (dogWalkArray = [20, 10, 30, 20, 10]) {
-for (var i = 5; i <= dogWalksArray.length; i--) {
-    if (i <= dogWalksArray.length) {
-        console.log("Ryder will get " + i + " more walks for today.");
+/*var getdogWalks = function(dogWalkArray){
+  for (var i = 5; i <= dogWalkArray.length; i--){
+    var timeSpentWalkingDog = ([0] + [1] + [2] + [3] + [4]);
+    
+    if (i <= dogWalkArray.length) {
+        console.log("Ryder will get " + i + " more walk(s) for today.");
     } else {
-        console.log("No more walks for Ryder until tomorrow.");
+        console.log("It's bedtime for " + myDog + ". No more walks until tomorrow!");
     };
-
-    var totalTimeSpentWalking = ([0] + [1] + [2] + [3] + [4]);
-    return totalTimeSpentWalking;
+    
 };
-
-var dogWalkArray = [20, 10, 30, 20, 10];
-    for (var i = 5; i <= dogWalksArray.length; i--) {
-        if (i <= dogWalksArray.length) {
-        console.log("Ryder will get " + i + " more walks for today.");
-        } else {
-        console.log("No more walks for Ryder until tomorrow.");
-    };
-
-    var totalTimeSpentWalking = ([0] + [1] + [2] + [3] + [4]);
-dogWalkArray.push(10);
-console.log("Some nights when Ryder has lots of playtime, he needs to go for an extra walk, which means he gets " + dogWalkArray.length + " walks those days.");
-console.log("On those days, he gets walks for " + dogWalkArray + " minutes.")*/
-
+*/
 
 
 // Main Code
 console.log("This is a story about my dog named " + myDog + ".");
 adoptedDog("a new dog");
-var myOutcome = getTypeOfFood("Stella & Chewy's raw food diet", "Wellness kibble diet");
-console.log(myOutcome);
+getTypeOfFood("Stella & Chewy's raw food diet", "Wellness kibble diet");
 console.log("Next, I needed to figure out how many bags of food I was going to buy.");
-var numberOfBagsBought = howManyBags(240);
-console.log("The total number of bags that I was able to purchase was " + numberOfBagsBought + ".");
-console.log("Now that I bought him plenty of food, I think I'll go to the pet store and buy him some toys and other needed items.");
-var itemsBoughtAtPetStore = getItemsBoughtAtPetStore("kong", "nylabone", "deer antler");
+howManyBags(240);
+//console.log("The total number of bags that I was able to purchase was " + numberOfBagsBought + ".");
+console.log("Now that I bought him plenty of food, I think I'll go to the pet store and buy him some toys and other needed items.")
+getItemsBoughtAtPetStore("kong", "nylabone", "deer antler");;
 console.log("At the pet store I found a lot of things to buy.");
 console.log("I ended up purchasing a " + itemsBoughtAtPetStore + ".");
 console.log("Ryder will be so excited once he sees what I bought him!");
 console.log("He always gets so excited when he gets new toys, although certain toys tend not to last very long.");
-//var timeWalkingRyder = dogWalkArray;
+//var timeWalkingDog = getdogWalks;
 //console.log("Dogs love going for walks, and Ryder is certainly no exception.");
-//console.log("A typical day for Ryder includes " + timeWalkingRyder + " minutes of walking time.");
+//console.log("A typical day for Ryder includes " + timeWalkingDog + " minutes of walking time.");
