@@ -19,9 +19,11 @@ var adoptedDog = function(newDog){
     console.log("I couldn't leave without him, so I decided I was going to take him home.");
     console.log("First though, I had to see if I had enough money.");
     // Argument Conditional
-    if (enoughMoney) {
-        console.log("It's true that I had enough money, so I took him home.");
-    } else console.log("I didn't have enough money, but I used a credit card.");
+        if (enoughMoney) {
+            console.log("It's true that I had enough money, so I took him home.");
+        } else {
+            console.log("I didn't have enough money, but I used a credit card.");
+        };
 };
 
 
@@ -34,11 +36,13 @@ var getTypeOfFood = function(rawFoodDiet, kibbleDiet){
     var kibbleFoodBoolean = false;
     console.log("After I brought him home, I needed to figure out what type of food I was going to feed him.");
     console.log("I did tons of research because I wanted to do whatever was going to be best for him.");
-    if (rawFoodBoolean === true) {
-        console.log("After doing research I decided to go with " + rawFoodDiet + " because of the benefits raw food has for dogs.")
-        return outcome;
-    } else console.log("I tried him on Wellness's kibble food to see how he would do on that.")
-        return altOutcome;    
+        if (rawFoodBoolean === true) {
+            console.log("After doing research I decided to go with " + rawFoodDiet + " because of the benefits raw food has for dogs.")
+            return outcome;
+        } else {
+            console.log("I tried him on Wellness's kibble food to see how he would do on that.")
+            return altOutcome;
+        };
 };
 
 // Number Function
@@ -51,12 +55,12 @@ var howManyBags = function(amountToSpend){
             console.log("Let's see how many bags I can afford.");
         } else if (totalNumberOfBags > 0) {
             console.log("I bought " + totalNumberOfBags + " bags. Let's see if I have enough for another bag.");
-        }
+        };
        
         
         totalNumberOfBags++;
         amountToSpend -=30;
-    }
+    };
     return totalNumberOfBags;
 };
 
@@ -70,7 +74,7 @@ var getItemsBoughtAtPetStore = function(item1, item2, item3){
     console.log("Ryder will be so excited once he sees that I bought him a " + itemsBought + ".");
     
     return itemsBought;
-}
+};
 
 // Array Function
 
