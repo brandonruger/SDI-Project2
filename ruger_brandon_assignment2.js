@@ -36,12 +36,12 @@ var getTypeOfFood = function(rawFoodDiet, kibbleDiet){
     var kibbleFoodBoolean = false;
     console.log("After I brought him home, I needed to figure out what type of food I was going to feed him.");
     console.log("I did tons of research because I wanted to do whatever was going to be best for him.");
-        if (rawFoodBoolean === true) {
+        if (rawFoodBoolean === true){
             console.log("After doing research I decided to go with " + rawFoodDiet + " because of the benefits raw food has for dogs.")
             return outcome;
-        } else if (rawFoodBoolean === true && kibbleFoodBoolean === true) {
+        } else if (rawFoodBoolean === true && kibbleFoodBoolean === true){
             console.log("I am going to feed him a combination of " + rawFoodDiet + " and " + kibbleDiet + ".");
-        } else if (rawFoodBoolean === !true && kibbleFoodBoolean === !false) {
+        } else if (rawFoodBoolean === !true && kibbleFoodBoolean === !false){
             console.log("I am going to feed him " + kibbleDiet + ".");
             return altOutcome;
         };
@@ -53,10 +53,10 @@ var getTypeOfFood = function(rawFoodDiet, kibbleDiet){
 var howManyBags = function(amountToSpend){
     console.log("Each bag of raw food cost " + 30 + " dollars.");
     var totalNumberOfBags = 0;
-    while (amountToSpend >= 30) {
-        if (totalNumberOfBags === 0) {
+    while (amountToSpend >= 30){
+        if (totalNumberOfBags === 0){
             console.log("Let's see how many bags I was able to afford if I had " + amountToSpend + " dollars.");
-        } else if (totalNumberOfBags > 0) {
+        } else if (totalNumberOfBags > 0){
             console.log("I bought " + totalNumberOfBags + " bags. Let's see if I have enough for another bag.");
         };
        
@@ -84,7 +84,7 @@ var getTimesWalkingDog = function(dogWalkArray){
     var walks = dogWalkArray[i];
     var timesPerWalk = minutesPerWalk [i];
   
-    for (var i = 0; i <= minutesPerWalk.length; i++) {
+    for (var i = 0; i <= minutesPerWalk.length; i++){
         if (i < minutesPerWalk.length){
             console.log("Ryder's " + dogWalkArray[i] + " usually lasts for " + minutesPerWalk[i] + " minutes.");
             } else {
