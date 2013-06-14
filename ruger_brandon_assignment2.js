@@ -39,11 +39,14 @@ var getTypeOfFood = function(rawFoodDiet, kibbleDiet){
         if (rawFoodBoolean === true) {
             console.log("After doing research I decided to go with " + rawFoodDiet + " because of the benefits raw food has for dogs.")
             return outcome;
-        } else {
-            console.log("I tried him on Wellness's kibble food to see how he would do on that.")
+        } else if (rawFoodBoolean === true && kibbleFoodBoolean === true) {
+            console.log("I am going to feed him a combination of " + rawFoodDiet + " and " + kibbleDiet + ".");
+        } else if (rawFoodBoolean === !true && kibbleFoodBoolean === !false) {
+            console.log("I am going to feed him " + kibbleDiet + ".");
             return altOutcome;
         };
 };
+
 
 // Number Function
 
