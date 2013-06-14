@@ -74,17 +74,29 @@ var getItemsBoughtAtPetStore = function(item1, item2, item3){
 };
 
 // Array Function
-var dogWalkArray = [20, 10, 30, 20, 10];
+//var dogWalkArray = [20, 10, 30, 20, 10];
 
-var getTimeWalkingDog = function(dogWalkArray){
-    var dogWalkTime = [0] + [1] + [2] + [3] + [4];
-    for (var i = 0; i < dogWalkArray.length; i++) {
+
+/*var getTotalWalks = function(dogWalkArray){
+    for (var i = 0; i <= dogWalkArray.length; i++) {
+        console.log("Ryder has gotten " + i + " walks so far today.");
+        dogWalkArray.push("6th walk");
+        console.log("Now Ryder has gotten a total of " + i + " walks so far today.");
         if (i < dogWalkArray.length) {
-            console.log("Ryder has gotten " + i + " walks so far today.");
-        } else  if (i >= dogWalkArray.length){
-            console.log("Time to put Ryder to bed. No more walks until tomorrow.");
+            console.log("Maybe we can take Ryder ")
+        }
+    }
+}*/
+var dogWalkArray = ["1st walk", "2nd walk", "3rd walk", "4th walk", "5th walk"];
+var minutesPerWalk = [20, 10, 30, 30, 10];
+
+var getTimesWalkingDog = function(dogWalkArray){
+    var walks = dogWalkArray[i];
+    var timesPerWalk = minutesPerWalk [i];
+  
+    for (var i = 0; i < minutesPerWalk.length; i++) {
+            console.log("Ryder's " + dogWalkArray[i] + " usually lasts for " + minutesPerWalk[i] + " minutes.");
         };
-    } return dogWalkTime;
 };
 
 
@@ -103,6 +115,7 @@ console.log("At the pet store I found a lot of things to buy.");
 console.log("I ended up purchasing a " + itemsBoughtAtPetStore + ".");
 console.log("Ryder will be so excited once he sees what I bought him!");
 console.log("He always gets so excited when he gets new toys, although certain toys tend not to last very long.");
-var timeWalkingDog = getTimeWalkingDog(dogWalkArray);
 console.log("Dogs love going for walks, and Ryder is certainly no exception.");
-console.log("A typical day for Ryder includes " + timeWalkingDog + " minutes of walking time.");
+console.log("I take Ryder for several walks each day.");
+console.log("Here is an example of a typical day.");
+var dogWalks = getTimesWalkingDog(dogWalkArray);
