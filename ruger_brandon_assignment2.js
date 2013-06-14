@@ -68,7 +68,7 @@ var howManyBags = function(amountToSpend){
 // String Function
 
 var getItemsBoughtAtPetStore = function(item1, item2, item3){
-    var itemsBought = (item1 + ", " + item2 + ",and " + item3);
+    var itemsBought = (item1 + ", " + item2 + ", and a " + item3);
     
     return itemsBought;
 };
@@ -82,13 +82,12 @@ var getTimesWalkingDog = function(dogWalkArray){
     var timesPerWalk = minutesPerWalk [i];
   
     for (var i = 0; i <= minutesPerWalk.length; i++) {
+        if (i < minutesPerWalk.length){
             console.log("Ryder's " + dogWalkArray[i] + " usually lasts for " + minutesPerWalk[i] + " minutes.");
-            if (i < minutesPerWalk.length) {
-                console.log("He will get another walk today.");
             } else {
                 console.log("This will be his last walk for today.");
             };
-        };
+        }; return minutesPerWalk.length
 };
 
 
@@ -105,9 +104,20 @@ console.log("After I bought his food, I went to the pet store to buy him some to
 var itemsBoughtAtPetStore = getItemsBoughtAtPetStore("kong", "nylabone", "deer antler");
 console.log("At the pet store I found a lot of things to buy.");
 console.log("I ended up purchasing a " + itemsBoughtAtPetStore + ".");
-console.log("Ryder was so excited once he saw what I bought him!");
+console.log(myDog + " was so excited once he saw what I bought him!");
 console.log("He always gets so excited when he gets new toys, although certain toys tend not to last very long.");
-console.log("Dogs love going for walks, and Ryder is certainly no exception.");
-console.log("I take Ryder for several walks each day.");
-console.log("Here is an example of a typical day.");
+console.log("Excercise is very important for dogs in order to maintain good health.");
+console.log("The best way to give them exercise is to take them for walks.");
+console.log("Dogs love going for walks, and " + myDog + " is certainly no exception.");
+console.log("I take " + myDog + " for several walks each day.");
+console.log("Here is an example of a typical day:");
 var dogWalks = getTimesWalkingDog(dogWalkArray);
+console.log(myDog + " had a total of " + minutesPerWalk.length + " walks today.");
+console.log("Occasionally if I have extra time I will take " + myDog + " for another walk.");
+console.log("On those days, his walk schedule looks like this:");
+dogWalkArray.push("6th walk");
+minutesPerWalk.push(20);
+var dogWalks = getTimesWalkingDog(dogWalkArray);
+console.log(myDog + " had a total of " + minutesPerWalk.length + " walks today.");
+console.log(myDog + " is one of the best things that has ever happened to me. I love him so much!");
+
